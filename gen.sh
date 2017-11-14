@@ -1,4 +1,5 @@
-#!/bin/sh
+#!/bin/bash
+
 names=( 
 "00000000000000020006000e7e9ffc3f"  "default"                           "pirate"
 "00008160000006810000408080010102"  "diamond_cross"                     "plus"
@@ -61,7 +62,7 @@ names=(
 "cross_reverse"                     "openhand"                          "zoom-in"
 "d9ce0ab605698f320427677b458ad60b"  "pencil"                            "zoom-out" )
 
-command -v xcursorgen >/dev/null && continue ||\
+command -v xcursorgen >/dev/null ||\
 	{ echo "xcursorgen not found"; exit 1; }
 
 
